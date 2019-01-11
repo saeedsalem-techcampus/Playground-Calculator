@@ -1,0 +1,31 @@
+import UIKit
+
+func calculation(firstNumber:Double,secondNumber:Double,operation:String)->Any{
+    var operationResult:Any!
+    if(operation == "*"){
+        operationResult = firstNumber * secondNumber
+    }else if(operation == "/"){
+        operationResult = firstNumber / secondNumber
+    }else if(operation == "-"){
+        operationResult = firstNumber - secondNumber
+    }else if(operation == "+"){
+        operationResult = firstNumber + secondNumber
+    }else if(operation == "%"){
+        operationResult = Int(firstNumber) % Int(secondNumber)
+    }else{
+        operationResult = "Operation is incorrect"
+    }
+    return operationResult
+}
+
+print(calculation(firstNumber: 4, secondNumber: 5.9, operation: "*"))
+
+print(calculation(firstNumber: 50.9, secondNumber: 5.9, operation: "/"))
+
+print(calculation(firstNumber: 10.9, secondNumber: 5.9, operation: "-"))
+
+print(calculation(firstNumber: 4.1, secondNumber: 5.9, operation: "+"))
+
+print(calculation(firstNumber: 20, secondNumber: 5.9, operation: "%"))
+
+print(calculation(firstNumber: 4, secondNumber: 5.9, operation: "&"))
